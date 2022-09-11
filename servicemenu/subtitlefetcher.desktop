@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=video/x-msvideo;video/quicktime;video/mpeg;video/mp4;
+Actions=fetchSubtitle
+
+[Desktop Action fetchSubtitle]
+Name=Fetch subtitle
+Icon=download
+Exec=konsole --noclose -e echo %F

@@ -1,0 +1,24 @@
+{
+  "name": "subtitlefetcher",
+  "version": "1.0.0",
+  "description": "Subtitle fetcher with dolphin context menu",
+  "main": "src/main.ts",
+  "scripts": {
+    "test-run": "ts-node src/main.ts --movie test.mp4 --language en ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Werner Langenhuisen",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/yargs": "^17.0.10",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "got": "^11.8.3",
+    "opensubtitles.com": "^1.0.0",
+    "readline": "^1.3.0",
+    "yargs": "^17.5.1"
+  }
+}
