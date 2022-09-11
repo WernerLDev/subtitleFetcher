@@ -25,5 +25,3 @@ npm install
 ```bash
 ts-node src/main.ts --movie <path to moviefile> --language en
 ```
-
-## License
