@@ -1,13 +1,21 @@
 # subtitleFetcher
 
-Improved version of my previous ScalaSubtitleFetcher. This time written in TypeScript. This implementation also uses the new API from opensubtitles.com.
+An improved version of my previous ScalaSubtitleFetcher. This time I have used TypeScript for the implementation. It is a simple command line tool that can be executed through a context menu item in the Dolphin filebrowser on linux.
 
-Still Under development.
+For this implementation I have used the new opensubtitles.com API.
+
+Still Under development so right now I do not have a package you can install. Maybe in the future.
 
 ## Run locally
 
-Run `npm i` to install dependencies
+1. Install dependencies
 
-To download a subtitle run the following command:
+```bash
+npm install
+```
 
-Run `ts-node src/main.ts --movie <path to moviefile> --language en`
+2. Run the application
+
+```bash
+ts-node src/main.ts --movie <path to moviefile> --language en
+```
