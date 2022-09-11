@@ -75,7 +75,9 @@ import { DownloadFile } from "./utils/downloadFile";
 
   const searchResponse = await client.search(moviehash);
   const filteredSearchResponse = searchResponse.data.filter(
-    (x) => x.attributes.language === chosenLanguage?.language_code
+    (x) =>
+      x.attributes.language === chosenLanguage?.language_code ||
+      chosenLanguage?.language_code == "all"
   );
 
   if (searchResponse.total_count > 0) {
