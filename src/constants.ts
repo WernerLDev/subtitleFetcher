@@ -14,8 +14,8 @@ export const headAsciiArt = `
 `;
 
 export const subhead = `
-Author: Werner Langenhuisen
-Version: 1.0.0
+Author: Werner L.
+Version: 0.0.1 Alpha (under development)
 Powered by: opensubtitles.com API`;
 
 export const border =
