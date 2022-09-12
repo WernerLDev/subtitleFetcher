@@ -29,7 +29,7 @@ export class OpenSubtitles {
     });
   }
 
-  public async search(moviehash: string) {
+  public async search(moviehash: string, query: string) {
     const request: OsRequest<any> = {
       method: "GET",
       relativePath: "subtitles",
@@ -37,6 +37,7 @@ export class OpenSubtitles {
 
     const parameters = new URLSearchParams();
     parameters.set("moviehash", moviehash);
+    parameters.set("query", query);
 
     return this._call<OsPaginatedResponse<OsItem>>(request, parameters);
   }

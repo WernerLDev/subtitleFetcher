@@ -73,7 +73,7 @@ import { DownloadFile } from "./utils/downloadFile";
    */
   const moviehash = await GenerateOpenSubtitleHash(argv.movie);
 
-  const searchResponse = await client.search(moviehash);
+  const searchResponse = await client.search(moviehash, fileName);
   const filteredSearchResponse = searchResponse.data.filter(
     (x) =>
       x.attributes.language === chosenLanguage?.language_code ||
